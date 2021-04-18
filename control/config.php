@@ -1,9 +1,9 @@
 <?php
 //definir variables de conexion
-define('servidor', 'localhost');
-define('bd', 'indesing_sisposw_v3');
-define('usuario', 'root');
-define('clave', '');
+define('servidor', 'sql107.epizy.com');
+define('bd', 'epiz_28403264_BDinventarioPC');
+define('usuario', 'epiz_28403264');
+define('clave', 'ewDFHnW0rgCP');
 
 // definir variables para encriptar contenido
 define("llave", "sisposw");
