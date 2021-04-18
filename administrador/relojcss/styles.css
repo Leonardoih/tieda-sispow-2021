@@ -1,0 +1,220 @@
+/* body {
+  background: #1C1E26;
+  height: 100vh;
+  display: flex; } */
+  * {
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background:url(bg.jpg) #361010;
+    background-size:cover;
+    color:rgb(44, 34, 34);
+    font-size: 16px;
+  }
+  .item {
+    margin: 1em;
+    padding: 1em;
+    float: left;
+
+
+  }
+  
+  .wrap {
+    width: 90%;
+    max-width: 1500px;
+    margin:auto;
+  }
+  
+  .widget {
+    width: 70%;
+    margin: 2em;
+    /*margin:32px; */
+  }
+  
+  .widget p {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .fecha {
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size:1.5em;
+    margin-bottom: 0.3125rem;
+    /*margin-bottom: 5px;*/
+    background:linear-gradient(#ccd0dd, #081ccf);
+    color:white;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .reloj {
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background:linear-gradient(#ccd0dd, #081ccf);
+    color:white;
+  }
+  
+  .reloj .caja-segundos {
+    display: inline-block;
+  }
+  
+  .reloj .segundos,
+  .reloj .ampm {
+    font-size: 2rem;
+    display: block;
+  }
+  
+
+.container_calendar {
+  width: 400px;
+  height: 550px;
+  /*  background: salmon; */
+  margin: 5% auto; }
+
+.header_calendar {
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(#31a77f, #506CF5);
+  color:white;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-direction: column; }
+  .header_calendar h1 {
+    margin: 30px 30px 0px 30px;
+    padding: 0px;
+    font-family: Arial;
+    color: white;
+    font-size: 100px; }
+  .header_calendar h5 {
+    margin: 0px 30px;
+    padding: 0px;
+    font-family: Arial;
+    color: white;
+    font-size: 40px; }
+
+.body_calendar {
+  width: 100%;
+  height: 55%;
+  background: white;
+  border-radius: 0px 0px 15px 15px; }
+
+.container_details {
+  width: 100%;
+  height: 30px;
+  /* background: #000000; */
+  position: relative;
+  top: -13px;
+  display: flex;
+  justify-content: space-between; }
+  .container_details .detail_1, .container_details .detail_2 {
+    width: 70px;
+    height: 100%;
+    /* background: salmon; */
+    display: flex;
+    justify-content: center; }
+    .container_details .detail_1 .detail, .container_details .detail_2 .detail {
+      margin: 0px 2px;
+      width: 10px;
+      height: 100%;
+      /* background:red; */ }
+      .container_details .detail_1 .detail .circle, .container_details .detail_2 .detail .circle {
+        width: 10px;
+        height: 10px;
+        background: #1C1E26;
+        position: relative;
+        top: calc(30px - 10px);
+        border-radius: 50%; }
+        .container_details .detail_1 .detail .circle .column, .container_details .detail_2 .detail .circle .column {
+          width: 80%;
+          height: 30px;
+          background: #ececec;
+          margin: 0px auto;
+          position: relative;
+          top: -22px;
+          border-radius: 5px; }
+
+.container_change_month {
+  width: 100%;
+  height: 25px;
+  /* background: gold; */
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.7; }
+  .container_change_month div {
+    /* background: firebrick; */
+    height: 20px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .container_change_month button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: auto 5px;
+    border: none;
+    background: none;
+    cursor: pointer; }
+
+.container_weedays {
+  width: 90%;
+  height: 40px;
+  /* background: #fa80725e; */
+  display: flex;
+  margin: 0px auto; }
+  .container_weedays span {
+    color: #506CF5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    line-height: 2.5; }
+
+.week_days_item {
+  display: flex;
+  /* background: firebrick; */
+  margin: auto;
+  width: calc(100% / 7);
+  justify-content: center;
+  cursor: pointer; }
+
+.week_days_item:hover {
+  color: #506CF5; }
+
+.prev_days {
+  opacity: 0.5; }
+
+.container_days {
+  width: 90%;
+  height: auto;
+  /* background: darkcyan; */
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px auto; }
+  .container_days span {
+    color: #4e4e4e;
+    /* background: #000; */
+    height: 20px;
+    margin: 5px 0px;
+    padding: 0px;
+    font-family: Arial; }
+  .container_days .today {
+    display: flex; }
+  .container_days .today:after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    background: #506CF5;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #506CF5;
+    opacity: 0.6;
+    margin: -5px 0px 0px 1px; }
+
+    
+
+/*# sourceMappingURL=styles.css.map */
