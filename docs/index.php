@@ -1,7 +1,7 @@
 <?php
 
-require_once "control/CtrlProductos.php";
-require_once "carrito.php";
+require_once "../control/CtrlProductos.php";
+require_once "../carrito.php";
 
 $ctrlProducto = new CtrlProductos();
 
